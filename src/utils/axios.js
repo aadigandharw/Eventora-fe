@@ -1,8 +1,8 @@
 import axios from 'axios';
 
 const api = axios.create({
-    // baseURL: 'http://localhost:5000/api',
-    baseURL:'https://eventora-be-4juy.onrender.com/api'
+    // baseURL: 'http://localhost:5000/api', //For Local 
+    baseURL:'https://eventora-be-4juy.onrender.com/api' //For Live
 });
 
 api.interceptors.request.use((config) => {
